@@ -81,6 +81,7 @@ h6 {
 
 header .navbar {
   background-color: #fff;
+  padding: 0px !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -529,28 +530,28 @@ header .navbar {
   padding: 20px 0px;
 }
 
-.columnRight .columnRightCol .dewscriptionSingleNews h1 {
+.columnRightCol .dewscriptionSingleNews h1 {
   font-size: 38px;
   color: #000;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.columnRight .columnRightCol h3 {
+.columnRightCol h3 {
   color: var(--color-primary);
   font-size: 18px;
 }
 
-.columnRight .description {
+.description {
   display: flex;
   gap: 20px;
 }
 
-.columnRight .description span {
+.description span {
   color: #424542;
 }
 
-.columnRight p {
+.SingleVideo p {
   font-size: 20px;
   line-height: 30px;
   color: #555;
@@ -723,6 +724,53 @@ header .navbar {
   width: 49%;
 }
 
+.SingleNews , .SingleVideo {
+  padding: 20px 0px;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchInput {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  padding-right: 5px;
+  position: absolute;
+  top: 71px;
+  z-index: 1000;
+}
+
+.searchInput input {
+  border: none;
+  font-size: 16px;
+}
+
+.searchInput input::placeholder {
+  font-size: 12px;
+}
+
+.searchInput button {
+  background: #e87224;
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.searchInput button i {
+  font-size: 14px;
+  width: 16px;
+  height: 16px;
+}
+
 /* ===== Footer ===== */
 .footerTop {
   height: 81px;
@@ -879,6 +927,9 @@ header .navbar {
   .twin-report-side .boximageF {
     margin-top: 10px;
   }
+  .columnRightCol .dewscriptionSingleNews h1 {
+    font-size: 22px !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -962,6 +1013,14 @@ header .navbar {
   .titleCardD {
     margin-top: 15px !important;
   }
+
+  .columnRightCol .dewscriptionSingleNews h1 {
+    font-size: 26px;
+  }
+
+  .searchInput {
+    top: 63px;
+  }
 }
 
 @media (min-width: 991px) {
@@ -972,8 +1031,8 @@ header .navbar {
     max-height: 167px;
     width: 100%;
   }
-  .SingleNews .contentColumnRight {
-    margin-top: 169px;
+  .SingleNews .contentColumnRight , .SingleVideo .contentColumnRight {
+    margin-top: 130px;
   }
 }
 

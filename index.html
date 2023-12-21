@@ -50,7 +50,15 @@
         <div
           class="container d-flex justify-content-between align-items-center"
         >
-          <i class="bi bi-search"></i>
+          <button class="searchButton" id="iconSearch">
+            <i class="bi bi-search"></i>
+          </button>
+          <form action="" class="searchInput" id="FormSearch">
+            <input type="text" placeholder="گەڕان" />
+            <button type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
           <div class="logo">
             <a href="/">
               <img src="./assets/img/logo/Logo.png" class="img-fluid" alt="" />
@@ -97,7 +105,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./product.html">هەواڵ</a>
+                <a class="nav-link" href="#">هەواڵ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">ڕاپۆرت</a>
@@ -111,15 +119,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">بیروڕا</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#">قەڵەمی ڕۆژ</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#">هەمەڕەنگ</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#">چاوپێکەوتن</a>
               </li>
@@ -177,7 +182,7 @@
       </div>
       <!-- ======= End Ad in header =======  -->
     </header>
-    <!-- End Header -->
+    <!-- ======= End Header ======= -->
 
     <main>
       <section class="adbody pb-3">
@@ -926,7 +931,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-12 d-flex flex-column gap-lg-3 gap-md-3 gap-0">
+            <div
+              class="col-lg-6 col-md-12 col-12 d-flex flex-column gap-lg-3 gap-md-3 gap-0"
+            >
               <div
                 class="d-flex flex-lg-row flex-md-row flex-column mt-lg-0 mt-3 justify-content-between gap-3"
               >
@@ -1139,6 +1146,7 @@
     </footer>
 
     <!-- Vendor JS Files -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

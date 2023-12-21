@@ -1,3 +1,10 @@
+$(document).ready(function () {
+  $("#iconSearch").click(function (event) {
+    $("#FormSearch").slideToggle(300);
+    event.stopPropagation();
+  });
+});
+
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   loop: true,
