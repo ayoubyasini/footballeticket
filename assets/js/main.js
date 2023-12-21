@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $("#FormSearch").css("display", "none");
   $("#iconSearch").click(function (event) {
     $("#FormSearch").slideToggle(300);
     event.stopPropagation();
