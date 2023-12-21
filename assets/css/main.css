@@ -266,6 +266,7 @@ header .navbar {
     rgba(26, 26, 26, 1) 0%,
     rgba(64, 61, 61, 1) 100%
   );
+  padding-right: 0px !important;
 }
 
 .morenews .list-comment .textComment {
@@ -770,6 +771,8 @@ header .navbar {
   width: 16px;
   height: 16px;
 }
+
+
 
 /* ===== Footer ===== */
 .footerTop {
