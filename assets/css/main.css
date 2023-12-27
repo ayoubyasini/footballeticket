@@ -175,6 +175,7 @@ header .navbar {
     var(--color-main),
     var(--color-primary) 50.71%
   );
+  height: 100%;
 }
 
 .report .card .card-body .titleCard,
@@ -199,11 +200,10 @@ header .navbar {
   width: 100%;
 }
 
-.titleCardD,
 .titleCardD a {
   font-size: 26px;
   border-right: 4px solid var(--color-primary);
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
   font-size: 26px;
   padding-right: 15px;
 }
@@ -423,6 +423,7 @@ header .navbar {
 
 .list_moreDocument896 {
   background: #ebebeb;
+  padding: 0px;
 }
 
 .list_moreDocument896 li {
