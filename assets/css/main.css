@@ -655,6 +655,10 @@ header .navbar {
   background-color: var(--color-primary);
 }
 
+.dropdown-menu {
+  text-align: right !important;
+}
+
 /* ====== descriptionComment Page ====== */
 .descriptionComment .comment .profile img {
   max-width: 91px;
@@ -725,7 +729,8 @@ header .navbar {
   width: 49%;
 }
 
-.SingleNews , .SingleVideo {
+.SingleNews,
+.SingleVideo {
   padding: 20px 0px;
 }
 
@@ -772,7 +777,14 @@ header .navbar {
   height: 16px;
 }
 
+.dropdown-menu {
+  text-align: right;
+  border-radius: 0px;
+}
 
+.dropdown-menu a {
+  font-size: 13px;
+}
 
 /* ===== Footer ===== */
 .footerTop {
@@ -973,12 +985,16 @@ header .navbar {
 
   header .navbar {
     background: #fff;
-    margin: 0px 12px;
+    margin: 0px;
     z-index: 1000;
   }
 
-  header .navbar .nav-item {
+  header .navbar .nav-item a {
     border-bottom: 1px solid #dddddd;
+  }
+
+  .navbar-nav {
+    padding: 0px !important;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -989,7 +1005,7 @@ header .navbar {
   .navbar {
     padding: 0px;
     position: absolute;
-    width: 97%;
+    width: 100%;
   }
 
   .logoImage {
@@ -1024,9 +1040,39 @@ header .navbar {
   .searchInput {
     top: 63px;
   }
+
+  .dropdown-menu {
+    border: none;
+    padding: 0px;
+    background: #efefef;
+  }
+
+  .dropdown-menu a {
+    font-size: 12px;
+    border-bottom: 1px solid #dddddd;
+    padding: 5px 8px;
+    position: relative;
+  }
+
+  .dropdown a span {
+    position: absolute;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(120, 120, 120, 0.15);
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .sectionVideo .container .row .col-lg-6:last-child {
     padding-right: 0px !important;
   }
@@ -1034,8 +1080,26 @@ header .navbar {
     max-height: 167px;
     width: 100%;
   }
-  .SingleNews .contentColumnRight , .SingleVideo .contentColumnRight {
+  .SingleNews .contentColumnRight,
+  .SingleVideo .contentColumnRight {
     margin-top: 130px;
+  }
+
+  .dropdown-menu {
+    background: #333333;
+  }
+
+  .dropdown-menu a {
+    color: #dddddd !important;
+  }
+
+  .dropdown-menu a:hover {
+    background: inherit;
+    color: #ffffff !important;
+  }
+
+  .dropdown a span {
+    display: none;
   }
 }
 

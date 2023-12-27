@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#FormSearch").slideToggle(300);
     event.stopPropagation();
   });
+
 });
 
 const swiper = new Swiper(".mySwiper", {

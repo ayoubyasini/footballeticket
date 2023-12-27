@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -8,11 +8,6 @@
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter"
-      rel="stylesheet"
-    />
 
     <!-- Vendor CSS Files -->
     <link
@@ -41,6 +36,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
+
   <body>
     <!-- ======= Header ======= -->
     <header>
@@ -103,8 +99,27 @@
                   >سەرەتا</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">هەواڵ</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  هەواڵ
+                  <span>
+                    <i class="bi bi-plus-lg"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">کوردستان </a>
+                  <a class="dropdown-item" href="#">عێراق </a>
+                  <a class="dropdown-item" href="#">جیهان</a>
+                  <a class="dropdown-item" href="#">ئابوری </a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">ڕاپۆرت</a>
@@ -112,6 +127,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">چاوپێکەوتن</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">مەلەفی تایبەت</a>
               </li>
@@ -486,11 +502,13 @@
       </div>
     </footer>
 
+    <!-- Vendor JS Files -->
     <script src="./assets/vendor/jquery/jquery.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
