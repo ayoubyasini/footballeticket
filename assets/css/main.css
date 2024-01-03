@@ -787,6 +787,10 @@ header .navbar {
   font-size: 13px;
 }
 
+.linkCard {
+  width: 33%;
+}
+
 /* ===== Footer ===== */
 .footerTop {
   height: 81px;
@@ -946,6 +950,10 @@ header .navbar {
   .columnRightCol .dewscriptionSingleNews h1 {
     font-size: 22px !important;
   }
+
+  .linkCard {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1070,6 +1078,10 @@ header .navbar {
 
   .dropdown-toggle::after {
     display: none;
+  }
+
+  .linkCard {
+    width: 49.5%;
   }
 }
 
