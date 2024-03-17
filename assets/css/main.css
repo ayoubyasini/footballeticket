@@ -206,12 +206,71 @@ main .btn-Con {
   width: 80%;
 }
 
-.main_section {
-  background-color: #e8ede7;
+.section_main {
+  background-color: #fff;
+}
+
+.topSection {
+  color: #fff;
+}
+
+.topSection h6 a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section_bottom {
+  color: #fff;
+  padding: 10px;
+}
+
+.section_bottom a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-right: 20px;
+  padding: 4px 8px;
+}
+
+.topSection p {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/* ============ start page but-ticket ============= */
+.buy_ticket header nav {
+  background-color: #fff !important;
+  color: #000;
+}
+
+.buy_ticket header .navbar-nav li a {
+  color: #000 !important;
+}
+
+.buy_ticket header .navbar-nav li:hover {
+  background: #ededed;
+  color: #888;
+}
+
+.buy_ticketPage .profiles h6 {
+  color: #fff;
+}
+
+.buy_ticketPage .profiles .profile {
+  border-radius: 0% 36px 36px 0;
 }
 
 footer .section_top {
   background-color: #ffffff;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 footer .section_top ul li a {
@@ -220,8 +279,19 @@ footer .section_top ul li a {
   font-size: 12px;
 }
 
+footer .section_top ul li:hover {
+  background: var(--color-main);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+footer .section_top ul li:hover a {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
 footer .section_top ul li {
-  padding: 14px 0px;
+  padding: 14px 8px;
 }
 
 footer .section_top ul {
@@ -236,6 +306,10 @@ footer .paragrah_footer {
 
 footer .end_footer {
   background-color: #008000;
+}
+
+footer .end_footer img {
+  height: fit-content;
 }
 
 /* =============== media query =============== */
@@ -255,6 +329,10 @@ footer .end_footer {
 
   .parent_end_header {
     padding: 0px;
+  }
+
+  .footer img {
+    width: 50px;
   }
 
   .parent_logo img {
