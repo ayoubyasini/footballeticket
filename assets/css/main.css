@@ -357,8 +357,14 @@ main .btn-Con {
   box-shadow: none;
 }
 
-.boxOf_input input {
+.boxOf_input input,
+.boxOf_input select {
   width: 60%;
+}
+
+.Login_form button {
+  width: 41% !important;
+  color: #fff;
 }
 
 /* ====== end login or signin page ====== */
@@ -418,6 +424,9 @@ footer .end_footer img {
 
   .boxOf_input {
     width: 100%;
+  }
+  .Login_form button {
+    width: 100% !important;
   }
 }
 

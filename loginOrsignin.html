@@ -120,7 +120,7 @@
       <div class="container">
         <div class="loginBox mb-2">
           <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3 col-md-12 col-12">
               <form action="" class="form_login">
                 <label for="username">نام کاربری</label>
                 <input
@@ -152,7 +152,7 @@
                 >
               </form>
             </div>
-            <div class="col-9">
+            <div class="col-lg-9 col-md-12 col-12 mt-lg-0 mt-md-3">
               <h6>ثبت نام</h6>
               <p>
                 در ورود اطلاعات هویتی دقت کنید این اطلاعات قابل ویرایش نیستند در
@@ -169,7 +169,7 @@
                 شما در نظر گرفته میشود. در صورت تمایل پس ورود به پنل کاربری
                 میتوانید نام کاربری و رمز عبور خودر را تغییر دهید.
               </p>
-              <form action="">
+              <form action="" class="Login_form">
                 <div
                   class="d-flex justify-content-between boxOf_input align-items-center"
                 >
@@ -196,23 +196,53 @@
                     placeholder="نام خانوادگی خود را به فارسی وارد کنید"
                   />
                 </div>
-                  <div
+                <div
                   class="d-flex justify-content-between boxOf_input align-items-center"
                 >
-                  <label for="name">
+                  <label for="national_n">
                     کد ملی
-                    <span class="text-success">
-                      (نام کاربری)</span>
-                    </label>
+                    <span class="text-success"> (نام کاربری)</span>
+                  </label>
                   <input
                     type="text"
-                    id="lastname"
-                    name="lastname"
+                    id="national_n"
+                    name="national_n"
                     value=""
                     class="form-control"
                     placeholder="کد ملی خود را بدون خط تیره وارد کنید"
                   />
                 </div>
+                <div
+                  class="d-flex justify-content-between boxOf_input align-items-center"
+                >
+                  <label for="phone">
+                    شماره تلفن همراه
+                    <span class="text-success"> (رمز عبور)</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    value=""
+                    class="form-control"
+                    placeholder="09"
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-between boxOf_input align-items-center"
+                >
+                  <label for="gender"> جنسیت </label>
+                  <select name="gender" id="gender" class="form-control">
+                    <option value="men">مرد</option>
+                    <option value="women">زن</option>
+                  </select>
+                </div>
+                <button
+                  type="submit"
+                  class="form-control m-auto bg-success mt-5"
+                >
+                  ثبت نام
+                </button>
               </form>
             </div>
           </div>
