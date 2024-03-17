@@ -120,13 +120,11 @@ body {
   color: var(--default-color);
   font-family: "myFirstFont";
   direction: rtl;
-  background-image: url(../img/image/mnasd-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #cccccc;
+  background: url(../img/image/mnasd-bg.jpg) no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100px;
 }
 
 a:hover {
@@ -240,17 +238,33 @@ main .btn-Con {
 
 /* ============ start page but-ticket ============= */
 .buy_ticket header nav {
-  background-color: #fff !important;
-  color: #000;
+  color: #fff;
 }
 
 .buy_ticket header .navbar-nav li a {
-  color: #000 !important;
+  color: #fff !important;
 }
 
-.buy_ticket header .navbar-nav li:hover {
-  background: #ededed;
-  color: #888;
+.buy_ticket .profile {
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+}
+
+.buy_ticket .games {
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  margin-top: 20px;
+}
+
+.buy_ticket .profile a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .buy_ticketPage .profiles h6 {
@@ -261,16 +275,101 @@ main .btn-Con {
   border-radius: 0% 36px 36px 0;
 }
 
+.buy_ticketPage .steps_list {
+  color: #fff;
+  padding: 0px;
+}
+
+.buy_ticketPage .steps_list li {
+  padding-top: 10px;
+}
+
+.buy_ticketPage .steps_list li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.buy_ticket .games {
+  color: #fff;
+}
+
+.buy_ticket .games p {
+  width: 27%;
+  text-align: center;
+}
+
+/* ====== login or signin page ====== */
+.loginpage .loginBox {
+  background: #eaf3e6;
+  border-top: 5px solid var(--color-main);
+}
+.loginpage .loginBox .row {
+  padding: 20px;
+}
+
+.loginpage .form_login {
+  border: 2px dashed var(--color-main);
+  padding: 20px;
+  background: #e5e5e5;
+}
+
+.loginpage .form_login label {
+  font-size: 14px;
+  color: #202020;
+  padding-bottom: 5px;
+}
+
+.loginpage .form_login input::placeholder {
+  font-family: "myFirstFont";
+  text-align: left;
+}
+
+.loginpage .form_login input:focus {
+  box-shadow: none;
+  border-color: var(--color-hover);
+}
+
+.loginpage .checkboxLabel {
+  font-size: 12px !important;
+  margin-top: 5px;
+}
+
+.loginBox .btnSubmit {
+  background-color: var(--color-main);
+  color: #fff;
+}
+
+.loginBox .forget_password {
+  color: gray;
+  font-size: 10px;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.boxOf_input {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.boxOf_input input:focus {
+  box-shadow: none;
+}
+
+.boxOf_input input {
+  width: 60%;
+}
+
+/* ====== end login or signin page ====== */
+
+/* ====== start footer ====== */
 footer .section_top {
   background-color: #ffffff;
-  font-size: 5rem;
   color: white;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 footer .section_top ul li a {
@@ -311,8 +410,17 @@ footer .end_footer {
 footer .end_footer img {
   height: fit-content;
 }
-
 /* =============== media query =============== */
+@media screen and (max-width: 768px) {
+  .buy_ticket .games img {
+    display: none;
+  }
+
+  .boxOf_input {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 991px) {
   .site-title {
     margin-right: 80px;
@@ -363,5 +471,9 @@ footer .end_footer img {
   }
   .profile span {
     display: none;
+  }
+
+  .buy_ticket .profile {
+    background: none;
   }
 }
