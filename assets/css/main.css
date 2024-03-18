@@ -398,6 +398,42 @@ main .btn-Con {
 }
 /* ====== end guide page ====== */
 
+/* ====== start info page ======= */
+.info .games {
+  border-radius: 0px !important;
+}
+
+.info .games table {
+  background: rgba(255, 255, 255, 0.27) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  margin-top: 20px;
+}
+
+.ticketReserved .games img {
+  width: 150px;
+  margin: auto;
+  display: block;
+}
+
+.info .games table tr td , .info .games table tr th {
+  background-color: transparent !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info .lists_info li input{
+  width: 150px;
+  margin-right: 20px;
+}
+
+.info .lists_info li input:focus {
+  box-shadow: none;
+}
+
+/* ====== end info page ======= */
+
 /* ====== start ticketreserved ====== */
 .ticketReserved h1 {
   color: #fff;

@@ -87,7 +87,7 @@
     </header>
     <!-- ======= End Header ======= -->
 
-    <main class="buy_ticketPage ticketReserved">
+    <main class="buy_ticketPage info">
       <div class="container">
         <div class="row mt-3">
           <div class="col-lg-12 d-flex justify-content-between profiles">
@@ -130,18 +130,35 @@
             </ul>
           </div>
           <div class="col-lg-10">
-            <div class="games">
-              <h1>اطلاعات بلیت رزو شده</h1>
+            <div
+              class="games d-flex justify-content-between align-items-center"
+            >
+              <img
+                src="./assets/img/image/15003697631825607.png"
+                class="img-fluid"
+                alt=""
+              />
+              <h6>پرسپولیس تهران</h6>
+              <p>
+                یک‌شنبه ٢٧ اسفند ١٤٠٢ ساعت ١٨:٤٥ ورزشگاه آزادی تهران، استادیوم
+                فوتبال لیگ برتر 1402-1403
+              </p>
+              <h6>پیکان تهران</h6>
+              <img src="./assets/img/image/14894842900919743.png" alt="" />
+            </div>
+            <div class="games p-4">
+              <h6>مشخصات افراد را وراد کنید</h6>
               <table class="table table-sm">
                 <thead>
                   <tr>
-                    <th scope="col">بلیت هوادان تیم</th>
+                    <th scope="col">هوادارن تیم</th>
                     <th scope="col">موقعیت</th>
                     <th scope="col">جایگاه</th>
                     <th scope="col">ردیف</th>
                     <th scope="col">صندلی</th>
                     <th scope="col">(ریال) قیمت</th>
-                    <th scope="col">شماره ملی</th>
+                    <th scope="col">مشخصات فردی</th>
+                    <th scope="col">لغو رزو</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -152,22 +169,45 @@
                     <td>07</td>
                     <td>13</td>
                     <td>5000</td>
-                    <td>292000555</td>
+                    <td>
+                      <ul class="list-unstyled lists_info p-0">
+                        <li
+                          class="d-flex align-items-center justify-content-center"
+                        >
+                          <label for="number_id">کد ملی :</label>
+                          <input
+                            type="text"
+                            id="number_id"
+                            class="form-control"
+                            name="number_id"
+                          />
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-center mt-2"
+                        >
+                          <label for="phone">شماره :</label>
+                          <input
+                            type="text"
+                            id="phone"
+                            class="form-control"
+                            name="phone"
+                          />
+                        </li>
+                      </ul>
+                    </td>
+                    <td>
+                      <a href="">
+                        <img
+                          src="./assets/img/icon/bin (1).png"
+                          class="img-fluid w-50"
+                          alt=""
+                        />
+                      </a>
+                    </td>
                   </tr>
                 </tbody>
               </table>
-            </div>
-            <div class="games">
-              <h1>اطلاعات خریدار</h1>
-              <ul class="list-unstyled p-0">
-                <li>نام خریدار : <span>ایوب یاسینی</span></li>
-                <li>نام خریدار : <span>ایوب یاسینی</span></li>
-              </ul>
-            </div>
-             <div class="games">
-              <h1>درگاه پرداخت</h1>
-              <img src="./assets/img/image/photo_2024-03-18_20-41-45.jpg" class="img-fluid" alt="">
-              <a href="" class="btn btn-success d-block mx-auto w-50 mt-4">اتصال به درگاه پرداخت</a>
+              <a href="" class="btn btn-success ml-auto d-blocks">تکمیل فرایند خرید</a>
             </div>
           </div>
         </div>
