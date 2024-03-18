@@ -300,10 +300,17 @@ main .btn-Con {
 }
 
 /* ====== login or signin page ====== */
-.loginpage .loginBox {
+.guideSec {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.loginpage .loginBox,
+.guideSec .guideBox {
   background: #eaf3e6;
   border-top: 5px solid var(--color-main);
 }
+
 .loginpage .loginBox .row {
   padding: 20px;
 }
@@ -368,6 +375,40 @@ main .btn-Con {
 }
 
 /* ====== end login or signin page ====== */
+
+/* ====== start guide page ====== */
+.guideBox {
+  padding: 20px;
+}
+
+.guideBox .box_paragraph {
+  background: #fdfefd;
+  padding: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+
+._badge {
+  margin-bottom: 20px;
+}
+
+.guideBox .box_paragraph ul li {
+  font-size: 14px;
+  line-height: 30px;
+}
+/* ====== end guide page ====== */
+
+/* ====== start ticketreserved ====== */
+.ticketReserved h1 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.ticketReserved .games {
+  border-radius: 0px !important;
+  padding: 15px;
+}
+/* ====== end ticketreserved ====== */
 
 /* ====== start footer ====== */
 footer .section_top {
